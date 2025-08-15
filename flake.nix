@@ -11,6 +11,7 @@
     };
     aagl.url = "github:ezKEa/aagl-gtk-on-nix";
     aagl.inputs.nixpkgs.follows = "nixpkgs";
+    agenix.url = "github:ryantm/agenix";
     nixcord.url = "github:kaylorben/nixcord";
     niri.url = "github:sodiboo/niri-flake";
     niri-unstable.url = "github:YaLTeR/niri";
@@ -36,7 +37,7 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, disko, ... }: {
+  outputs = inputs@{ self, nixpkgs, disko, agenix, ... }: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -44,6 +45,7 @@
         modules = [
           inputs.home-manager.nixosModules.default
           inputs.disko.nixosModules.disko
+          agenix.nixosModules.default
           ./hosts/default/config.nix
         ];
       };

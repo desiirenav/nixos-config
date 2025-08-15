@@ -9,9 +9,9 @@
   imports = [
     ./../../modules/nixos/hardware-configuration.nix
     ./../../modules/nixos/disko.nix
+    ./../../modules/nixos/secrets.nix
     ./../../modules/nixos/stylix.nix
     ./../../modules/nixos/impermanence.nix
-    ./../../modules/nixos/vm.nix
     ./../../modules/nixos/nvidia.nix
     ./../../modules/nixos/gaming.nix
     ./../../modules/nixos/fonts.nix
@@ -40,6 +40,9 @@
   # Fish shell
   programs.fish.enable = true;
 
+  # Default editor
+  environment.variables.EDITOR = "nvim";
+  
   # Users
   users.mutableUsers = false;
   users.users = {
