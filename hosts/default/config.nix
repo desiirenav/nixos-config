@@ -8,8 +8,8 @@
  
   imports = [
     ./../../modules/nixos/hardware-configuration.nix
-    ./../../modules/nixos/disko.nix
     ./../../modules/nixos/secrets.nix
+    ./../../modules/nixos/disko.nix
     ./../../modules/nixos/stylix.nix
     ./../../modules/nixos/impermanence.nix
     ./../../modules/nixos/nvidia.nix
@@ -84,6 +84,7 @@
   # Packages
   environment.systemPackages = with pkgs; [
     inputs.zen-browser.packages."${pkgs.system}".default
+    inputs.agenix.packages."${system}".default
     yazi
     ani-cli
     unzip
