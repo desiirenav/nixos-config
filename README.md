@@ -55,3 +55,27 @@ sudo cp -r /mnt/etc/nixos /mnt/persist
 NIX_CONFIG="experimental-features = nix-command flakes" \
   sudo nixos-install --flake .#nixos --no-root-passwd
 ```
+
+
+## nixos-anywhere-test
+
+### Password for ssh
+```
+passwd
+```
+
+### Config from github
+```
+git clone git@github.com:desiirenav/nixos-config.git
+cd nixos-config
+```
+
+### ip
+```
+ip addr
+```
+
+### Executing nixos-anywhere
+```
+nixos-anywhere -- --flake '.#nixos' nixos@ip
+```
