@@ -8,7 +8,6 @@
  
   imports = [
     ./../../modules/nixos/hardware-configuration.nix
-    ./../../modules/nixos/secrets.nix
     ./../../modules/nixos/disko.nix
     ./../../modules/nixos/stylix.nix
     ./../../modules/nixos/impermanence.nix
@@ -38,21 +37,24 @@
   hardware.bluetooth.enable = true;
 
   # Fish shell
-  programs.fish.enable = true;
+  #programs.fish.enable = true;
 
   # Default editor
   environment.variables.EDITOR = "nvim";
   
+  services = {
+    displayManager.gdm.enable = true;
+  };
+
   # Users
   users.mutableUsers = false;
   users.users = {
-    root.hashedPasswordFile = "/persist/passwords/root";
     narayan = {
       isNormalUser = true;
       description = "Narayan";
-      shell = pkgs.fish;
+      #shell = pkgs.fish;
       extraGroups = [ "wheel" "networkmanager"];
-      hashedPasswordFile = "/persist/passwords/narayan";
+      initialPassword = "1234";
       openssh.authorizedKeys.keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIKDznwMBlqOUH/OwUZgmTA8v/VARf5DyPd8ReCupbSr narayan@nixos"];
     };
   };
