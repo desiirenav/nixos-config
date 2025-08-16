@@ -66,7 +66,7 @@ passwd
 
 ### Config from github
 ```
-git clone git@github.com:desiirenav/nixos-config.git
+git clone https://github.com/desiirenav/nixos-config.git && \
 cd nixos-config
 ```
 
