@@ -77,5 +77,7 @@ ip addr
 
 ### Executing nixos-anywhere
 ```
-nixos-anywhere -- --flake '.#nixos' nixos@ip
+sudo nix --experimental-features "nix-command flakes" run github:nix-community/nixos-anywhere '.#nixos' --target-host nixos@ip
+
+
 ```
