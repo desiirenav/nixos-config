@@ -1,4 +1,4 @@
-## How to install (currently not tested and only for personal use!)
+## Installation (only for personal use!)
 
 ### References 
 - https://github.com/vimjoyer for nearly everything about nix and nixos
