@@ -12,6 +12,7 @@
       "Documents"
       "Videos"
       "Games"
+      "Projects"
       ".ssh"
       ".zen"
       ".local/share/Steam"
