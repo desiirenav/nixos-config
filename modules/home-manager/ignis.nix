@@ -7,7 +7,7 @@
     # Add Ignis to the Python environment (useful for LSP support)
     addToPythonEnv = true;
 
-    configDir = ./shell;
+    configDir = ./ignis;
 
     services = {
       bluetooth.enable = true;

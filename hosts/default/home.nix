@@ -8,7 +8,7 @@
 }: {
   imports = [
     ./../../modules/home-manager/impermanence.nix
-    ./../../modules/home-manager/ignis/ignis.nix
+    ./../../modules/home-manager/ignis.nix
     ./../../modules/home-manager/anyrun.nix
     ./../../modules/home-manager/niri.nix
     ./../../modules/home-manager/nixcord.nix
