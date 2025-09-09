@@ -43,7 +43,7 @@
   environment.variables.EDITOR = "nvim";
 
   # GDM
-  # services.displayManager.gdm.enable = true;
+  services.displayManager.gdm.enable = true;
 
   # Users
   users.mutableUsers = false;
