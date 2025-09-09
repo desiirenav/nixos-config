@@ -14,7 +14,7 @@
     ./../../modules/nixos/nvidia.nix
     ./../../modules/nixos/gaming.nix
     ./../../modules/nixos/fonts.nix
-    ./../../overlays/liga.nix
+    #./../../overlays/liga.nix
   ];
 
   # Host name
