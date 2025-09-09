@@ -12,8 +12,6 @@
     aagl.url = "github:ezKEa/aagl-gtk-on-nix";
     aagl.inputs.nixpkgs.follows = "nixpkgs";
     nixcord.url = "github:kaylorben/nixcord";
-    niri.url = "github:sodiboo/niri-flake";
-    niri-unstable.url = "github:YaLTeR/niri";
     impermanence.url = "github:nix-community/impermanence";
     nvim-config.url = "github:desiirenav/nvim-config";
     #apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
@@ -28,6 +26,10 @@
     };
     ignis = {
       url = "github:ignis-sh/ignis";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    niri = {
+      url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     #sf-mono-liga-src = {
