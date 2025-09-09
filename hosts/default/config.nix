@@ -69,9 +69,10 @@
   };
 
   # Niri
+  niri-flake.cache.enable = false;
   programs.niri = {
     enable = true;
-    package = pkgs.niri-unstable;
+    package = pkgs.niri;
   };
 
   # Allow unfree packages
