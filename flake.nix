@@ -30,10 +30,6 @@
       url = "github:ignis-sh/ignis";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    sf-mono-liga-src = {
-      url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
-      flake = false;
-    };
     zen-browser = {
       url = "github:pfaj/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
