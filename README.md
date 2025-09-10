@@ -43,7 +43,7 @@ sudo cp -r nixos-config/. /mnt/etc/nixos && \
 sudo mkdir -p /mnt/etc/nixos/modules/nixos && \
 sudo mv -i /mnt/etc/nixos/hardware-configuration.nix /mnt/etc/nixos/modules/nixos/ && \
 cd /mnt/etc/nixos && \
-sudo rm -rf .git configuration.nix flake.lock && \
+sudo rm -rf .git configuration.nix && \
 sudo cp -r /mnt/etc/nixos /mnt/persist
 ```
 
