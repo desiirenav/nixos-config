@@ -16,7 +16,6 @@
     niri-unstable.url = "github:YaLTeR/niri";
     impermanence.url = "github:nix-community/impermanence";
     nvim-config.url = "github:desiirenav/nvim-config";
-    apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     stylix.url = "github:danth/stylix";
     anyrun = {
       url = "github:anyrun-org/anyrun";
