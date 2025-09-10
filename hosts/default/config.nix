@@ -2,7 +2,7 @@
 
 {
   nixpkgs.overlays = [
-  #  inputs.niri.overlays.niri
+    inputs.niri.overlays.niri
     inputs.nvim-config.overlays.default
   ];
  
@@ -14,7 +14,7 @@
     ./../../modules/nixos/nvidia.nix
     ./../../modules/nixos/gaming.nix
     ./../../modules/nixos/fonts.nix
-    ./../../overlays/liga.nix
+    #./../../overlays/liga.nix
   ];
 
   # Host name
@@ -44,12 +44,12 @@
 
   # GDM
   #services.displayManager.gdm.enable = true;
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
-  services.gnome.core-apps.enable = false;
-  services.gnome.core-developer-tools.enable = false;
-  services.gnome.games.enable = false;
-  environment.gnome.excludePackages = with pkgs; [ gnome-tour gnome-user-docs ];
+  #services.displayManager.gdm.enable = true;
+  #services.desktopManager.gnome.enable = true;
+  #services.gnome.core-apps.enable = false;
+  #services.gnome.core-developer-tools.enable = false;
+  #services.gnome.games.enable = false;
+  #environment.gnome.excludePackages = with pkgs; [ gnome-tour gnome-user-docs ];
 
   # Users
   users.mutableUsers = false;
@@ -76,10 +76,10 @@
 
   # Niri
   #niri-flake.cache.enable = false;
-  #programs.niri = {
-  #  enable = true;
-  #  package = pkgs.niri-unstable;
-  #};
+  programs.niri = {
+    enable = true;
+    package = pkgs.niri-unstable;
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
