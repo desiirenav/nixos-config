@@ -2,7 +2,7 @@
 
 {
   nixpkgs.overlays = [
-    inputs.niri.overlays.niri
+    #inputs.niri.overlays.niri
     inputs.nvim-config.overlays.default
   ];
  
@@ -75,10 +75,10 @@
 
   # Niri
   #niri-flake.cache.enable = false;
-  programs.niri = {
-    enable = true;
-    package = pkgs.niri-unstable;
-  };
+  #programs.niri = {
+  #  enable = true;
+  #  package = pkgs.niri-unstable;
+  #};
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
