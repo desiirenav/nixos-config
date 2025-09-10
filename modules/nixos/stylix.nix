@@ -11,7 +11,7 @@
   stylix = {
     autoEnable = true;
     enable = true;
-    image = ./../../assets/wallpapers/gruvbox.png;
+    image = ./../../assets/wallpapers/bird.png;
      base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
     polarity = "dark";
     cursor = {
