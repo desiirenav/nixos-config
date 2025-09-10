@@ -1,10 +1,10 @@
 { inputs, config, lib, pkgs, ... }:
 
 {
-  #nixpkgs.overlays = [
+  nixpkgs.overlays = [
   #  inputs.niri.overlays.niri
-  #  inputs.nvim-config.overlays.default
-  #];
+    inputs.nvim-config.overlays.default
+  ];
  
   imports = [
     ./../../modules/nixos/hardware-configuration.nix
