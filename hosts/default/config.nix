@@ -1,10 +1,10 @@
 { inputs, config, lib, pkgs, ... }:
 
 {
-  nixpkgs.overlays = [
-    inputs.niri.overlays.niri
-    inputs.nvim-config.overlays.default
-  ];
+  #nixpkgs.overlays = [
+  #  inputs.niri.overlays.niri
+  #  inputs.nvim-config.overlays.default
+  #];
  
   imports = [
     ./../../modules/nixos/hardware-configuration.nix
@@ -43,7 +43,13 @@
   environment.variables.EDITOR = "nvim";
 
   # GDM
+  #services.displayManager.gdm.enable = true;
   services.displayManager.gdm.enable = true;
+  services.desktopManager.gnome.enable = true;
+  services.gnome.core-apps.enable = false;
+  services.gnome.core-developer-tools.enable = false;
+  services.gnome.games.enable = false;
+  environment.gnome.excludePackages = with pkgs; [ gnome-tour gnome-user-docs ];
 
   # Users
   users.mutableUsers = false;
@@ -70,10 +76,10 @@
 
   # Niri
   #niri-flake.cache.enable = false;
-  programs.niri = {
-    enable = true;
-    package = pkgs.niri-stable;
-  };
+  #programs.niri = {
+  #  enable = true;
+  #  package = pkgs.niri-unstable;
+  #};
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
