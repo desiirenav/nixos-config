@@ -12,7 +12,7 @@
     autoEnable = true;
     enable = true;
     image = ./../../assets/wallpapers/bird.png;
-     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+     base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine-dawn.yaml";
     polarity = "dark";
     cursor = {
       package = pkgs.capitaine-cursors-themed;
