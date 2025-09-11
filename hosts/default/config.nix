@@ -2,7 +2,7 @@
 
 {
   nixpkgs.overlays = [
-    #inputs.niri.overlays.niri
+    inputs.niri.overlays.niri
     inputs.nvim-config.overlays.default
   ];
  
@@ -44,7 +44,7 @@
 
   # GDM
   services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
+  #services.desktopManager.gnome.enable = true;
   #services.gnome.core-apps.enable = false;
   #services.gnome.core-developer-tools.enable = false;
   #services.gnome.games.enable = false;
@@ -75,10 +75,10 @@
 
   # Niri
   #niri-flake.cache.enable = false;
-  #programs.niri = {
-  #  enable = true;
-  #  package = pkgs.niri-unstable;
-  #};
+  programs.niri = {
+    enable = true;
+    package = pkgs.niri-unstable;
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
