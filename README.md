@@ -53,3 +53,8 @@ sudo cp -r /mnt/etc/nixos /mnt/persist
 NIX_CONFIG="experimental-features = nix-command flakes" \
   sudo nixos-install --flake .#nixos --no-root-passwd
 ```
+
+### Changing permissions and reboot
+sudo chmod -v 755 /mnt/etc/nixos && \
+sudo chmod -v 755 /mnt/persist && \
+reboot
