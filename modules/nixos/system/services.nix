@@ -5,10 +5,10 @@
   services.displayManager.gdm.enable = true;
 
   # Gnome
-  services.desktopManager.gnome.enable = true;
+  #services.desktopManager.gnome.enable = true;
 
   # Gnome core apps
-  #services.gnome.core-apps.enable = true;
+  services.gnome.core-apps.enable = true;
 
   # GVFS
   services.gvfs.enable = true;
