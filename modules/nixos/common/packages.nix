@@ -9,6 +9,7 @@
     unzip
     nitch
     fastfetch
+    calibre
     fuzzel
     git
   ];

@@ -12,6 +12,7 @@
     ./../../modules/nixos/common/distrobox.nix
     ./../../modules/nixos/common/fonts.nix
     ./../../modules/nixos/common/gaming.nix
+    ./../../modules/nixos/common/ios.nix
     ./../../modules/nixos/common/nvf.nix
     ./../../modules/nixos/common/packages.nix 
     ./../../modules/nixos/common/services.nix
