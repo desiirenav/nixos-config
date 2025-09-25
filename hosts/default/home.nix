@@ -9,6 +9,7 @@
   imports = [
     ./../../modules/home-manager/users/narayan.nix 
     ./../../modules/home-manager/common/fuzzel.nix 
+    ./../../modules/home-manager/common/helix.nix 
     ./../../modules/home-manager/common/ignis.nix
     ./../../modules/home-manager/common/impermanence.nix
     ./../../modules/home-manager/common/kitty.nix
