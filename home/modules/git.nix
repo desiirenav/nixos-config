@@ -7,9 +7,6 @@
   ...
 }: {
 
-  home.username = "narayan";
-  home.homeDirectory = "/home/narayan";
-
   programs.git = {
     enable = true;
     userName = "desiirenav";

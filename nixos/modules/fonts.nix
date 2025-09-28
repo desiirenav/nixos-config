@@ -1,9 +1,6 @@
+{pkgs, ...}: 
+
 {
-  config,
-  inputs,
-  pkgs,
-  ...
-}: {
   nixpkgs.overlays = [
     (final: prev: {
       sf-mono-liga-bin = prev.stdenvNoCC.mkDerivation rec {
@@ -17,5 +14,11 @@
       '';
      };
    }) 
+  ];
+
+  fonts.packages = with pkgs; [
+    lmodern
+    corefonts
+    sf-mono-liga-bin
   ];
 }

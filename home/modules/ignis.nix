@@ -1,4 +1,3 @@
-# home.nix
 {inputs, pkgs, ...}: {
   imports = [inputs.ignis.homeManagerModules.default];
   programs.ignis = {

@@ -53,7 +53,7 @@
         modules = [
           inputs.home-manager.nixosModules.default
           inputs.disko.nixosModules.disko
-          ./hosts/default/config.nix
+          ./nixos/config.nix
         ];
       };
     };

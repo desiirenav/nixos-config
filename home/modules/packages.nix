@@ -13,5 +13,4 @@
     swaybg
     adwaita-icon-theme
   ];
-
 }
