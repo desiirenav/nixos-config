@@ -9,7 +9,6 @@
 in {
   imports = [
     inputs.niri.homeModules.niri
-    inputs.niri.homeModules.stylix
   ];
 
   programs.niri = {

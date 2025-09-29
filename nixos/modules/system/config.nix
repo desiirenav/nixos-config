@@ -37,15 +37,6 @@
     };
   };
 
-  # Home-manager
-  programs.fuse.userAllowOther = true;
-  home-manager = {
-    extraSpecialArgs = {inherit inputs;};
-    users = {
-      "narayan" = import ./home.nix;
-    };
-  };
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 

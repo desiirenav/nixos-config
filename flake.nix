@@ -5,10 +5,6 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    firefox-addons = {
-      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     aagl.url = "github:ezKEa/aagl-gtk-on-nix";
     aagl.inputs.nixpkgs.follows = "nixpkgs";
     nvf.url = "github:notashelf/nvf";
@@ -17,10 +13,6 @@
     stylix.url = "github:danth/stylix";
     apple-fonts = {
       url = "github:Lyndeno/apple-fonts.nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    anyrun = {
-      url = "github:anyrun-org/anyrun";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     disko = {
@@ -51,9 +43,17 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
-          inputs.home-manager.nixosModules.default
-          inputs.disko.nixosModules.disko
           ./nixos/modules/system/config.nix
+          inputs.disko.nixosModules.disko
+          inputs.home-manager.nixosModules.home-manager
+          {
+            home-manager = {
+              useUserPackages = true;
+              useGlobalPkgs = true;
+              extraSpecialArgs = { inherit inputs; };
+              users.narayan = import ./home/home.nix;
+            };
+          }
         ];
       };
     };

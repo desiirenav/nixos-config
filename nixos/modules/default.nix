@@ -3,6 +3,7 @@
 {
   imports = [
     ./config
+    ./disko.nix
     ./fonts.nix
     ./gaming.nix
     ./ios.nix
