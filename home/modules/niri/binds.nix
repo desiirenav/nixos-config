@@ -4,62 +4,10 @@
   config,
   lib,
   ...
-}: let 
-  colors = config.lib.stylix.colors.withHashtag;
-in {
-  imports = [
-    inputs.niri.homeModules.niri
-    inputs.niri.homeModules.stylix
-  ];
-
+}: {
   programs.niri = {
-    enable = true;
-    package = pkgs.niri;
     settings = {
-      environment = {
-        DISPLAY = ":0";
-        NIXOS_OZONE_WL = "1";
-      };
-      prefer-no-csd = true;
-      layout = {
-        gaps = 16;
-        background-color = "transparent";
-        focus-ring.enable = false;
-        border = {
-          enable = false;
-        };
-        shadow.enable = true;
-      };
-      spawn-at-startup = [
-        {command = ["xwayland-satellite"];}
-        {command = ["swaybg" "-m" "fill" "-i" "${./../../wallpapers/nord.svg}" ];}
-        #{command = ["ignis init"];}
-      ];
-      screenshot-path = "~/Pictures/Screenshots/%Y-%m-%dT%H:%M:%S.png";
-
-      layer-rules = [
-        {
-          matches = [
-            {
-              namespace = "^wallpaper$";
-            }
-          ];
-          place-within-backdrop = true;
-        } 
-      ]; 
-
-      window-rules = [
-        {
-          geometry-corner-radius = {
-            bottom-left = 9.0;
-            bottom-right = 9.0;
-            top-left = 9.0;
-            top-right = 9.0;
-          };
-          clip-to-geometry = true;
-        }
-      ];
-      binds = with config.lib.niri.actions; {
+       binds = with config.lib.niri.actions; {
 
         # Show hotkeys 
         "Mod+Shift+Slash".action = show-hotkey-overlay;

@@ -1,9 +1,11 @@
 {
-  pkgs,
   inputs,
+  pkgs,
+  config,
+  lib,
   ...
 }: {
-  programs.fuzzel = {
+  programs.niri = {
     enable = true;
   };
 }
