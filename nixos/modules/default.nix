@@ -2,14 +2,16 @@
 
 {
   imports = [
-    ./system/defaut.nix
-    ./fonts.nix
-    ./gaming.nix
-    ./ios.nix
-    ./neovim.nix
-    ./niri.nix
-    ./pkgs.nix
-    ./stylix.nix
+    ./driver
+    ./fonts 
+    ./gaming
+    ./hardware 
+    ./ios 
+    ./neovim 
+    ./niri 
+    ./persist 
+    ./pkgs 
+    ./stylix
   ];
 }
 

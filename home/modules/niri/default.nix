@@ -32,7 +32,7 @@ in {
       };
       spawn-at-startup = [
         {command = ["xwayland-satellite"];}
-        {command = ["swaybg" "-m" "fill" "-i" "${./../../wallpapers/nord.svg}" ];}
+        {command = ["swaybg" "-m" "fill" "-i" "${./../../../wallpapers/nord.svg}" ];}
         #{command = ["ignis init"];}
       ];
       screenshot-path = "~/Pictures/Screenshots/%Y-%m-%dT%H:%M:%S.png";

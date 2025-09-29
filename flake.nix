@@ -28,7 +28,7 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
-          ./nixos/config.nix
+          ./nixos/modules/system/config.nix
           inputs.disko.nixosModules.disko
           home-manager.nixosModules.home-manager
           {
