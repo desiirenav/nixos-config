@@ -3,7 +3,7 @@
 {
   imports = [
     ./fuzzel.nix
-    ./git.nix
+    ./git
     ./ignis.nix
     ./kitty.nix
     ./niri.nix
