@@ -10,6 +10,7 @@
     ./ios.nix
     ./neovim.nix
     ./niri.nix
+    ./persist.nix
     ./stylix.nix
   ];
 }
