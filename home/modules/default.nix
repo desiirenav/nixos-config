@@ -6,7 +6,7 @@
     ./git
     ./ignis
     ./kitty
-    ./niri
+    #./niri
     ./nixcord
     ./persist
     ./pkgs

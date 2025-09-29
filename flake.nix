@@ -14,7 +14,6 @@
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     disko.url = "github:nix-community/disko/latest";
     ignis.url = "github:ignis-sh/ignis";
-    niri.url = "github:sodiboo/niri-flake";
     sf-mono-liga-src = {
       url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
       flake = false;

@@ -32,6 +32,7 @@
         package = pkgs.sf-mono-liga-bin;
         name = "Liga SFMono Nerd Font";
       };
+      sizes.terminal = 12;
     };
   };
 }

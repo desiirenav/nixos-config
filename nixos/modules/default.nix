@@ -8,7 +8,7 @@
     ./hardware 
     ./ios 
     ./neovim 
-    ./niri 
+    #./niri 
     ./persist 
     ./pkgs 
     ./stylix
