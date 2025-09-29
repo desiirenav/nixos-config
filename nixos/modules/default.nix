@@ -7,7 +7,6 @@
     ./gaming
     ./hardware 
     ./ios 
-    ./neovim 
     ./niri 
     ./persist 
     ./pkgs 

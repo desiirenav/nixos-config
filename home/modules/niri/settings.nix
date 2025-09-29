@@ -9,7 +9,7 @@
 in {
   programs.niri = {
     enable = true;
-    pkgs = pkgs.niri;
+    package = pkgs.niri;
     settings = {
       environment = {
         DISPLAY = ":0";
@@ -31,9 +31,9 @@ in {
         focus-ring.enable = false;
         border = {
           enable = true;
-          width = 1;
-          active.color = "#${base0D}";
-          inactive.color = "#${base07}";
+          width = 2;
+          #active.color = "#${base0D}";
+          #inactive.color = "#${base07}";
         };
         shadow.enable = true;
         struts = {
@@ -46,7 +46,6 @@ in {
       spawn-at-startup = [
         {command = ["xwayland-satellite"];}
         {command = ["swaybg" "-m" "fill" "-i" "${./../../../wallpapers/nord.svg}" ];}
-        #{command = ["ignis init"];}
       ];
       screenshot-path = "~/Pictures/Screenshots/%Y-%m-%dT%H:%M:%S.png";
       prefer-no-csd = true;

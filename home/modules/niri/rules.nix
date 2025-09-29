@@ -7,24 +7,13 @@
 }: {
   programs.niri = {
     settings = {
-      layer-rules = [
-        {
-          matches = [
-            {
-              namespace = "^wallpaper$";
-            }
-          ];
-          place-within-backdrop = true;
-        } 
-      ]; 
-
       window-rules = [
         {
           geometry-corner-radius = {
-            bottom-left = 9.0;
-            bottom-right = 9.0;
-            top-left = 9.0;
-            top-right = 9.0;
+            bottom-left = 3.0;
+            bottom-right = 3.0;
+            top-left = 3.0;
+            top-right = 3.0;
           };
           clip-to-geometry = true;
         }
