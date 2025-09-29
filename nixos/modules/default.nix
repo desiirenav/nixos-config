@@ -6,6 +6,7 @@
     ./disko.nix
     ./fonts.nix
     ./gaming.nix
+    ./hardware.nix
     ./ios.nix
     ./neovim.nix
     ./niri.nix
