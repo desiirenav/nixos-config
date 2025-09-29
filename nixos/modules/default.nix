@@ -2,16 +2,13 @@
 
 {
   imports = [
-    ./config
-    ./disko.nix
+    ./system/defaut.nix
     ./fonts.nix
     ./gaming.nix
-    ./hardware.nix
     ./ios.nix
     ./neovim.nix
     ./niri.nix
-    ./nvidia.nix
-    ./persist.nix
+    ./pkgs.nix
     ./stylix.nix
   ];
 }
