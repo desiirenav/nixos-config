@@ -10,6 +10,7 @@
     ./ios.nix
     ./neovim.nix
     ./niri.nix
+    ./nvidia.nix
     ./persist.nix
     ./stylix.nix
   ];
