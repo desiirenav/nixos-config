@@ -6,9 +6,7 @@
   system,
   ...
 }: {
-  imports = [
-    ./modules/default.nix
-  ];
+  imports = [ ./modules ];
 
 
   home.username = "narayan";

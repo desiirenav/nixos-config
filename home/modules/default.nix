@@ -2,14 +2,14 @@
 
 {
   imports = [
-    ./fuzzel.nix
+    ./fuzzel
     ./git
-    ./ignis.nix
-    ./kitty.nix
-    ./niri.nix
-    ./nixcord.nix
-    ./packages.nix
-    ./persist.nix
+    ./ignis
+    ./kitty
+    ./niri
+    ./nixcord
+    ./persist
+    ./pkgs
   ];
 }
 
