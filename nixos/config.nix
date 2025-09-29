@@ -1,20 +1,19 @@
-{ inputs, config, lib, pkgs, ... }:
-
 {
-  imports = [
-    ./../../modules/nixos/hardware-configuration.nix
-    ./../../modules/nixos/disko.nix
-    ./../../modules/nixos/stylix.nix
-    ./../../modules/nixos/impermanence.nix
-    ./../../modules/nixos/nvidia.nix
-    ./../../modules/nixos/gaming.nix
-    ./../../modules/nixos/fonts.nix
-    #./../../overlays/liga.nix
-  ];
+  config,
+  lib,
+  pkgs,
+  inputs,
+  system,
+  ...
+}: {
+  imports = [ ./modules ];
 
   # Host name
   networking.hostName = "nixos";
-  
+
+  # Networking host ID
+  networking.hostId = "b5bf67d7";
+
   # Network
   networking.networkmanager.enable = true;
 
