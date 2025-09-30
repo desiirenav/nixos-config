@@ -9,7 +9,6 @@
     unzip
     nitch
     fastfetch
-    vim
     fuzzel
     git
   ];

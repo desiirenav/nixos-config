@@ -7,9 +7,11 @@
     ./ignis
     ./kitty
     ./niri
+    ./nvim
     ./nixcord
     ./persist
     ./pkgs
+    ./stylix
   ];
 }
 

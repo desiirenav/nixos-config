@@ -10,10 +10,13 @@
     enable = true;
     viAlias = true;
     vimAlias = true;
-    plugins = pkgs.vimPlugins; [
-      nord-nvim
-    ]
+    vimdiffAlias = true;
+    plugins = with pkgs.vimPlugins; [
+      {
+        plugin = gruvbox-nvim;
+        config = "colorscheme gruvbox";
+      }
+    ];
   };
 
-  home.file.".config/nvim/settings.lua".source = ./init.lua;
 }
