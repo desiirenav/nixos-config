@@ -9,7 +9,6 @@
     ./niri
     ./nixcord
     ./nushell
-    ./nvim
     ./persist
     ./pkgs
     ./stylix

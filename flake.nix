@@ -15,11 +15,11 @@
     disko.url = "github:nix-community/disko/latest";
     ignis.url = "github:ignis-sh/ignis";
     niri.url = "github:sodiboo/niri-flake";
+    zen-browser.url = "github:pfaj/zen-browser-flake";
     sf-mono-liga-src = {
       url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
       flake = false;
     };
-    zen-browser.url = "github:pfaj/zen-browser-flake";
   };
 
   outputs = inputs@{ self, nixpkgs, apple-fonts, disko, home-manager, ... }: {

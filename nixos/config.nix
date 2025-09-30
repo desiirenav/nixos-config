@@ -35,7 +35,6 @@
   services.displayManager.gdm.enable = true;
   #services.desktopManager.gnome.enable = true;
  
-
   # User
   users.mutableUsers = false;
   users.users = {

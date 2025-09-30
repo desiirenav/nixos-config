@@ -7,7 +7,8 @@
     ./gaming
     ./hardware 
     ./ios 
-    ./niri 
+    ./niri
+    ./nvim
     ./persist 
     ./pkgs 
     ./stylix
