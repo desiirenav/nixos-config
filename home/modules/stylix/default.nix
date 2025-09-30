@@ -5,7 +5,7 @@
   ...
 }: {
   stylix = {
-    neovim.enable = false;
+    targets.neovim.enable = false;
   };
 }
 

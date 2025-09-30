@@ -6,6 +6,10 @@
   ...
 }: {
 
+  home.sessionVariables = {
+    EDITOR = "nvim";
+  };
+
   programs.neovim = {
     enable = true;
     viAlias = true;
@@ -13,10 +17,9 @@
     vimdiffAlias = true;
     plugins = with pkgs.vimPlugins; [
       {
-        plugin = gruvbox-nvim;
-        config = "colorscheme gruvbox";
+        plugin = nord-nvim;
+        config = "colorscheme nord";
       }
     ];
   };
-
 }

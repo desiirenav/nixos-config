@@ -7,8 +7,9 @@
     ./ignis
     ./kitty
     ./niri
-    ./nvim
     ./nixcord
+    ./nushell
+    ./nvim
     ./persist
     ./pkgs
     ./stylix

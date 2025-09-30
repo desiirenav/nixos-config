@@ -44,6 +44,7 @@
       description = "Narayan";
       extraGroups = [ "wheel" "networkmanager"];
       hashedPasswordFile = "/persist/passwords/narayan";
+      shell = pkgs.nushell;
       openssh.authorizedKeys.keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILkP3cPc6L2zpp9uPILiDZAjF8dwPx1jm58V/cMBP+KL narayan@nixos"];
     };
   };
