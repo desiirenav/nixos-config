@@ -17,6 +17,7 @@
       nvim-treesitter.withAllGrammars
       nvim-lspconfig
       nvim-cmp
+      Nvim-R
       {
         plugin = nord-nvim;
         config = "colorscheme nord";
