@@ -9,7 +9,8 @@
     ./ios 
     ./niri
     ./persist 
-    ./pkgs 
+    ./pkgs
+    ./R
     ./stylix
   ];
 }
