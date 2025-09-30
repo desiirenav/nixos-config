@@ -5,30 +5,14 @@
   lib,
   ...
 }: {
+
   imports = [
-    inputs.nvf.nixosModules.default
+    inputs.nixvim.nixosModules.nixvim
   ];
-  
-  programs.nvf = {
+
+  programs.nixvim = {
     enable = true;
-    settings = {
-      vim = {
-        autocomplete.nvim-cmp.enable = true;
-        statusline.lualine = lib.mkForce {
-          enable = true;
-          theme = "nord";
-        };
-        theme = lib.mkForce {
-          enable = true;
-          name = "nord";
-          style = "dark";
-        };
-        languages = {
-          nix.enable = true;
-          r.enable = true;
-        };
-      };
-    };
+    colorschemes.nord.enable = true;
+    plugins.lualine.enable = true;
   };
 }
-
