@@ -8,6 +8,7 @@
     ./kitty
     ./niri
     ./nixcord
+    ./nvim
     ./nushell
     ./persist
     ./pkgs

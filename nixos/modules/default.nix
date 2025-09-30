@@ -8,7 +8,6 @@
     ./hardware 
     ./ios 
     ./niri
-    ./nvim
     ./persist 
     ./pkgs 
     ./stylix
