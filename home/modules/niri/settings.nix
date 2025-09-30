@@ -20,7 +20,7 @@ in {
         #touchpad, mouse, trackpoint = {} 
       };
       layout = {
-        gaps = 1;
+        gaps = 0;
         preset-column-widths = [
           {proportion = 0.25;}
           {proportion = 0.5;}
@@ -31,7 +31,7 @@ in {
         focus-ring.enable = false;
         border = {
           enable = true;
-          width = 2;
+          width = 3;
           #active.color = "#${base0D}";
           #inactive.color = "#${base07}";
         };
@@ -45,7 +45,7 @@ in {
       };
       spawn-at-startup = [
         {command = ["xwayland-satellite"];}
-        {command = ["swaybg" "-m" "fill" "-i" "${./../../../wallpapers/nord.svg}" ];}
+        {command = ["swaybg" "-m" "fill" "-i" "${./../../../pics/nordix.png}" ];}
       ];
       screenshot-path = "~/Pictures/Screenshots/%Y-%m-%dT%H:%M:%S.png";
       prefer-no-csd = true;

@@ -11,7 +11,7 @@
   stylix = {
     autoEnable = true;
     enable = true;
-    image = ./../../../wallpapers/nord.svg;
+    image = ./../../../pics/nordix.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
     polarity = "dark";
     cursor = {
