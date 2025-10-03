@@ -10,12 +10,12 @@
   stylix = {
     autoEnable = true;
     enable = true;
-    image = ./../../../pics/nordix.png;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
+    image = ./../../../pics/sunset.jpg;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/ayu-dark.yaml";
     polarity = "dark";
     cursor = {
-      package = pkgs.capitaine-cursors-themed;
-      name = "Capitaine Cursors (Nord)";
+      package = pkgs.bibata-cursors;
+      name = "Bibata-Modern-Classic";
       size = 24;
     };
     fonts = {

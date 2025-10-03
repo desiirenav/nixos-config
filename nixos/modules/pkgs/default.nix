@@ -1,14 +1,15 @@
-{ pkgs, ... }:
+{ inputs,  pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
     inputs.zen-browser.packages."${pkgs.system}".default
-    librewolf
     yazi
     vlc
     ani-cli
     unzip
     nitch
+    neofetch
+    pfetch
     fastfetch
     fuzzel
     zathura
