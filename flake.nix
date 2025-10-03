@@ -8,7 +8,7 @@
     aagl.url = "github:ezKEa/aagl-gtk-on-nix";
     aagl.inputs.nixpkgs.follows = "nixpkgs";
     nixcord.url = "github:kaylorben/nixcord";
-    nixvim.url = "github:nix-community/nixvim";
+    nvim.config.url = "github.com:desiirenav/nvim-config"
     impermanence.url = "github:nix-community/impermanence";
     stylix.url = "github:danth/stylix";
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";

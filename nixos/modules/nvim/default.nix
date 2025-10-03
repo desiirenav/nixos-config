@@ -1,18 +1,14 @@
 {
-  config,
   inputs,
   pkgs,
-  lib,
   ...
 }: {
 
-  imports = [
-    inputs.nixvim.nixosModules.nixvim
+  nixpkgs.overlays = [
+    inputs.nvim-config.overlays.default
   ];
 
-  programs.nixvim = {
-    enable = true;
-    colorschemes.nord.enable = true;
-    plugins.lualine.enable = true;
-  };
+  environment.systemPackages = with pkgs; [
+    nvim-pkg
+  ];
 }

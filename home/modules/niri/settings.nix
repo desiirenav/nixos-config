@@ -37,10 +37,10 @@ in {
         };
         shadow.enable = true;
         struts = {
-          left = 0;
-          right = 0;
-          top = 0;
-          bottom = 0;
+          left = 9;
+          right = 9;
+          top = 9;
+          bottom = 9;
         };
       };
       spawn-at-startup = [

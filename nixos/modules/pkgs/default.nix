@@ -9,6 +9,7 @@
     nitch
     fastfetch
     fuzzel
+    zathura
     git
   ];
 
