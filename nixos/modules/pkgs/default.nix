@@ -1,7 +1,9 @@
-{ inputs, config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
+    inputs.zen-browser.packages."${pkgs.system}".default
+    librewolf
     yazi
     vlc
     ani-cli
