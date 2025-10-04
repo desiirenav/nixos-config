@@ -33,7 +33,6 @@ sudo cp -r /run/media/nixos/Ventoy/ssh/ /mnt/persist/
 ### Using my nixos-config from github
 ```
 git clone https://github.com/desiirenav/nixos-config.git && \
-sudo mkdir -p /mnt/etc/nixos
 sudo cp -r nixos-config/. /mnt/etc/nixos && \
 sudo cp -r /mnt/etc/nixos /mnt/persist
 ```
