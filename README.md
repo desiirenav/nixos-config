@@ -30,6 +30,11 @@ sudo cp -r /run/media/nixos/Ventoy/passwords/ /mnt/persist/
 sudo cp -r /run/media/nixos/Ventoy/ssh/ /mnt/persist/
 ```
 
+### Creating /etc/nixos
+```
+sudo mkdir -p /mnt/etc/nixos
+```
+
 ### Using my nixos-config from github
 ```
 git clone https://github.com/desiirenav/nixos-config.git && \
