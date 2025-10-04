@@ -10,7 +10,7 @@
   stylix = {
     autoEnable = true;
     enable = true;
-    image = ./../../../pics/sunset.jpg;
+    image = ./../../../pics/cherry.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
     polarity = "dark";
     cursor = {
