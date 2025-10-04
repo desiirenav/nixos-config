@@ -20,7 +20,7 @@ in {
         #touchpad, mouse, trackpoint = {} 
       };
       layout = {
-        gaps = 0;
+        gaps = 6;
         preset-column-widths = [
           {proportion = 0.25;}
           {proportion = 0.5;}
@@ -30,17 +30,17 @@ in {
         default-column-width = {proportion = 0.5;};
         focus-ring.enable = false;
         border = {
-          enable = true;
-          width = 3;
+          enable = false;
+          #width = 3;
           #active.color = "#${base0D}";
           #inactive.color = "#${base07}";
         };
         shadow.enable = true;
         struts = {
-          left = 9;
-          right = 9;
-          top = 9;
-          bottom = 9;
+          left = 12;
+          right = 12;
+          top = 12;
+          bottom = 12;
         };
       };
       spawn-at-startup = [

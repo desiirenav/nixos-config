@@ -19,6 +19,7 @@
       #".config/heroic"
       ".local/share/Steam"
       ".local/share/anime-game-launcher"
+      #".local/share/honkers-railway-launcher"
       ".local/share/sleepy-launcher"
       ".config/discord"
       ".config/Vencord"

@@ -11,12 +11,12 @@
     autoEnable = true;
     enable = true;
     image = ./../../../pics/sunset.jpg;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/ayu-dark.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
     polarity = "dark";
     cursor = {
       package = pkgs.bibata-cursors;
       name = "Bibata-Modern-Classic";
-      size = 24;
+      size = 22;
     };
     fonts = {
       serif = {

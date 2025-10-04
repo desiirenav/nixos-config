@@ -30,19 +30,10 @@ sudo cp -r /run/media/nixos/Ventoy/passwords/ /mnt/persist/
 sudo cp -r /run/media/nixos/Ventoy/ssh/ /mnt/persist/
 ```
 
-### hardware-configuration.nix
-```
-sudo nixos-generate-config --no-filesystems --root /mnt
-sudo mv /mnt/etc/nixos/hardware-configuration.nix /mnt/etc/nixos/hardware.nix
-```
-
 ### Using my nixos-config from github
 ```
 git clone https://github.com/desiirenav/nixos-config.git && \
 sudo cp -r nixos-config/. /mnt/etc/nixos && \
-sudo mv -i /mnt/etc/nixos/hardware.nix /mnt/etc/nixos/nixos/modules/system && \
-cd /mnt/etc/nixos && \
-sudo rm -rf .git configuration.nix flake.lock && \
 sudo cp -r /mnt/etc/nixos /mnt/persist
 ```
 

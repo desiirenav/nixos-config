@@ -10,6 +10,7 @@
     nitch
     neofetch
     pfetch
+    parted
     fastfetch
     fuzzel
     zathura
