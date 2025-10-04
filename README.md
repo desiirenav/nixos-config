@@ -27,7 +27,6 @@ sudo nix --experimental-features "nix-command flakes" run github:nix-community/d
 ```
 # Mount the disk
 sudo cp -r /run/media/nixos/Ventoy/passwords/ /mnt/persist/
-sudo cp -r /run/media/nixos/Ventoy/ssh/ /mnt/persist/
 ```
 
 ### Creating /etc/nixos
@@ -45,6 +44,7 @@ sudo cp -r /mnt/etc/nixos /mnt/persist
 ### Installing
 
 ```
+cd /mnt/etc/nixos
 NIX_CONFIG="experimental-features = nix-command flakes" \
   sudo nixos-install --flake .#nixos --no-root-passwd
 ```
