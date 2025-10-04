@@ -14,7 +14,7 @@ sudo su -
 ```
 ### Downloading disko.nix
 ```
-https://raw.githubusercontent.com/desiirenav/nixos-config/refs/heads/main/nixos/modules/hardware/disko.nix
+curl https://raw.githubusercontent.com/desiirenav/nixos-config/refs/heads/main/nixos/modules/hardware/disko.nix -o /tmp/disko.nix
 ```
 
 ### Formatting with disko.nix
