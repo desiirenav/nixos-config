@@ -27,7 +27,6 @@
     files = [
       ".bash_history"
       ".config/systemsettingsrc"
-      ".config/nushell/history.txt"
     ];
     allowOther = true;
   };

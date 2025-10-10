@@ -13,9 +13,9 @@
     stylix.url = "github:danth/stylix";
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     disko.url = "github:nix-community/disko/latest";
+    firefox-addons.url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
     ignis.url = "github:ignis-sh/ignis";
     niri.url = "github:sodiboo/niri-flake";
-    #sops-nix.url = "github:Mic92/sops-nix";
     zen-browser.url = "github:pfaj/zen-browser-flake";
     base2Tone-nvim.url = "github:atelierbram/Base2Tone-nvim";
     base2Tone-nvim.flake = false;
@@ -25,7 +25,7 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, apple-fonts, disko, home-manager, sops-nix, ... }: {
+  outputs = inputs@{ self, nixpkgs, apple-fonts, disko, home-manager, ... }: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
