@@ -44,6 +44,9 @@
     jack.enable = true;
   };
 
+  # Fish shell
+  programs.fish.enable = true;
+
   # User
   users.mutableUsers = false;
   users.users = {
@@ -52,6 +55,7 @@
       isNormalUser = true;
       description = "Narayan";
       extraGroups = [ "wheel" "networkmanager"];
+      shell = pkgs.fish;
       hashedPasswordFile = "/persist/passwords/narayan";
       openssh.authorizedKeys.keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAoyU9jZ1PpX6erE14WSCWYNEd41zju1pMCp6dZj+epu narayan@nixos"];
     };

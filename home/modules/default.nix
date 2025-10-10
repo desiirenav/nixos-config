@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./fish
     ./fuzzel
     ./git
     #./ignis
