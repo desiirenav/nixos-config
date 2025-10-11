@@ -32,7 +32,6 @@
         specialArgs = { inherit inputs; };
         modules = [
           ./nixos/config.nix
-          sops-nix.nixosModules.sops
           inputs.disko.nixosModules.disko
           home-manager.nixosModules.home-manager
           {

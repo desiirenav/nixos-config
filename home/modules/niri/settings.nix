@@ -35,7 +35,7 @@ in {
           #active.color = "#${base0D}";
           #inactive.color = "#${base07}";
         };
-        shadow.enable = true;
+        shadow.enable = false;
         struts = {
           left = 0;
           right = 0;
