@@ -16,6 +16,7 @@
     firefox-addons.url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
     ignis.url = "github:ignis-sh/ignis";
     niri.url = "github:sodiboo/niri-flake";
+    textfox.url = "github:adriankarlen/textfox";
     zen-browser.url = "github:pfaj/zen-browser-flake";
     base2Tone-nvim.url = "github:atelierbram/Base2Tone-nvim";
     base2Tone-nvim.flake = false;
@@ -25,7 +26,7 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, apple-fonts, disko, home-manager, ... }: {
+  outputs = inputs@{ self, nixpkgs, apple-fonts, disko, home-manager,  ... }: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
