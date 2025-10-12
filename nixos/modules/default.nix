@@ -1,7 +1,6 @@
-{ inputs, config, lib, pkgs, ... }:
-
 {
   imports = [
+    ./copyparty
     ./driver
     ./fonts 
     ./gaming

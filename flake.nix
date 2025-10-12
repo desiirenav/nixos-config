@@ -7,6 +7,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     aagl.url = "github:ezKEa/aagl-gtk-on-nix";
     aagl.inputs.nixpkgs.follows = "nixpkgs";
+    copyparty.url = "github:9001/copyparty";
     nixcord.url = "github:kaylorben/nixcord";
     nvim-config.url = "github:desiirenav/nvim-config";
     impermanence.url = "github:nix-community/impermanence";
