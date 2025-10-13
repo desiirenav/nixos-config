@@ -1,6 +1,6 @@
 {
   imports = [
-    ./copyparty
+    #./copyparty
     ./driver
     ./fonts 
     ./gaming

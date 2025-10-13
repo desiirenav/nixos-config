@@ -10,13 +10,13 @@
   stylix = {
     autoEnable = true;
     enable = true;
-    image = ./../../../pics/beach.png;
+    image = ./../../../pics/gruvbox.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
     polarity = "dark";
     cursor = {
-      package = pkgs.rose-pine-cursor;
-      name = "BreezeX-RosePine-Linux";
-      size = 22;
+      package = pkgs.capitaine-cursors-themed;
+      name = "Capitaine Cursors (Gruvbox)";
+      size = 24;
     };
     fonts = {
       serif = {

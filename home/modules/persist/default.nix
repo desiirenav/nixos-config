@@ -15,6 +15,7 @@
       "Projects"
       ".ssh"
       ".zen"
+      ".gamdl"
       ".config/ignis"
       #".config/heroic"
       ".local/share/Steam"
@@ -27,6 +28,7 @@
     files = [
       ".bash_history"
       ".config/systemsettingsrc"
+      "cookies.txt"
     ];
     allowOther = true;
   };
