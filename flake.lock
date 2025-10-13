@@ -947,11 +947,11 @@
         "nixpkgs": "nixpkgs_11"
       },
       "locked": {
-        "lastModified": 1760328398,
-        "narHash": "sha256-SwHO/dOKnrLvLHHt4YtuVhK2T/5xVWUrwnEuIkj7YeI=",
+        "lastModified": 1760333091,
+        "narHash": "sha256-RnxuBj8tXe3djnsqSmUj91FXNYMDD0MFTCLQlBUh7Eo=",
         "owner": "desiirenav",
         "repo": "nvim-config",
-        "rev": "c73aa88635ba241205bb05ed62d71827d336a696",
+        "rev": "8d0e93c4c2eea434f23675cb21e5a50e780ef709",
         "type": "github"
       },
       "original": {
