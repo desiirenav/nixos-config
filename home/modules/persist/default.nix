@@ -14,21 +14,13 @@
       "Games"
       "Projects"
       ".ssh"
-      ".zen"
-      ".gamdl"
-      ".config/ignis"
-      #".config/heroic"
       ".local/share/Steam"
       ".local/share/anime-game-launcher"
-      #".local/share/honkers-railway-launcher"
       ".local/share/sleepy-launcher"
-      ".config/discord"
-      ".config/Vencord"
     ];
     files = [
       ".bash_history"
       ".config/systemsettingsrc"
-      "cookies.txt"
     ];
     allowOther = true;
   };
