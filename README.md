@@ -48,4 +48,9 @@ NIX_CONFIG="experimental-features = nix-command flakes" \
   sudo nixos-install --flake .#nixos --no-root-passwd
 ```
 
-
+### Own
+```
+sudo chmod -v 755 /mnt/etc/nixos && \
+sudo chmod -v 755 /mnt/persist && \
+reboot
+```
