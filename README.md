@@ -38,7 +38,7 @@ git clone https://github.com/desiirenav/nixos-config.git && \
 sudo cp -r nixos-config/. /mnt/etc/nixos && \
 sudo cp -r /mnt/etc/nixos /mnt/persist && \
 cd /mnt/etc/nixos && \
-git add .
+sudo rm -rf .git
 ```
 
 ### Installing
