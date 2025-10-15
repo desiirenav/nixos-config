@@ -31,5 +31,24 @@
       "/var/lib/nixos"
       "/etc/NetworkManager/system-connections"
     ];
+    users.narayan = {
+      directories = [
+        "Downloads"
+        "Music"
+        "Pictures"
+        "Documents"
+        "Videos"
+        "Games"
+        "Projects"
+        ".ssh"
+        ".local/share/Steam"
+        ".local/share/anime-game-launcher"
+        ".local/share/sleepy-launcher"
+      ];
+      files = [
+        ".bash_history"
+        ".config/systemsettingsrc"     
+      ];
+    };
   };
 }
