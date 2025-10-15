@@ -7,7 +7,6 @@
     ./git
     ./kitty
     ./niri
-    ./persist
     ./pkgs
     ./stylix
   ];
