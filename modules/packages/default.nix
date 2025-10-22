@@ -14,6 +14,7 @@
     gtk4
     kitty
     vesktop
+    walker
     bibata-cursors
     adwaita-icon-theme
     matugen

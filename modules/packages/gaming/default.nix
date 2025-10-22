@@ -17,7 +17,7 @@
       directories = [
         "Games"
         ".local/share/Steam"
-        #".local/share/anime-game-launcher"
+        ".local/share/anime-game-launcher"
         ".local/share/sleepy-launcher"
       ];
     };

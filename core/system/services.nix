@@ -1,6 +1,8 @@
 { config, lib,pkgs,inputs,system,...}: 
 
 {
+
+  services.displayManager.gdm.enable = true;
   services = {
     gvfs.enable = true;
     openssh.enable = true;

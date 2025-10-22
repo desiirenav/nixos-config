@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{pkgs, ...}: 
+{
   hjem.users.narayan.files = {
     ".config/matugen/config.toml".source = pkgs.writers.writeTOML "config.toml" {
       config = {
@@ -40,6 +41,10 @@
         yazi = {
           input_path = ./templates/theme.toml;
           output_path = "~/.config/yazi/theme.toml";
+        };
+        walker = {
+          input_path = ./templates/walker.css;
+          output_path = "~/.config/walker/themes/matugen.css";
         };
         zathura = {
           input_path = ./templates/zathura;
