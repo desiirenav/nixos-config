@@ -34,10 +34,6 @@
           input_path = ./templates/colors-fish.theme;
           output_path = "~/.config/fish/themes/Matugen.theme";
         };
-        fuzzel = {
-          input_path = ./templates/fuzzel.ini;
-          output_path = "~/.config/fuzzel/fuzzel.ini";
-        };
         yazi = {
           input_path = ./templates/theme.toml;
           output_path = "~/.config/yazi/theme.toml";

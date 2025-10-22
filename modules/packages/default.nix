@@ -10,6 +10,7 @@
     yazi
     nautilus
     swww
+    swaybg
     gtk3
     gtk4
     kitty
@@ -20,7 +21,6 @@
     matugen
     xwayland-satellite
     brightnessctl
-    fuzzel
     ani-cli
     adw-gtk3
     unzip
