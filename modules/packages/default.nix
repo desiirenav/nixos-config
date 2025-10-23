@@ -15,7 +15,7 @@
     gtk4
     kitty
     vesktop
-    walker
+    fuzzel
     bibata-cursors
     adwaita-icon-theme
     matugen

@@ -15,7 +15,6 @@
     ./niri
     ./packages
     ./persist
-    ./walker
   ];
 }
 

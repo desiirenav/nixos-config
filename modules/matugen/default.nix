@@ -1,4 +1,4 @@
-{pkgs, ...}:let
+{pkgs, lib, ...}:let
   wallpaper = "/etc/nixos/pics/cave.png";
   createMatugen = pkgs.writeShellScriptBin "createMatugen" ''
     echo "creating matugen theme..."
@@ -12,12 +12,11 @@ in {
 
   systemd.user.services = {
     startSwwwDaemon = {
-      Unit = {
-        Description = "starts swww daemon";
-        After = "niri.service";
-      };
-      Install.WantedBy = ["default.target"];
-      Service = {
+      enable = true;
+      description = "starts swww daemon";
+      after = ["niri.service"];
+      wantedBy = ["default.target"];
+      serviceConfig = {
         ExecStart = lib.getExe' pkgs.swww "swww-daemon";
         Type = "simple";
         Restart = "on-failure";
@@ -25,12 +24,11 @@ in {
       };
     };
     createMatugen = {
-      Unit = {
-        Description = "starts swww daemon";
-        After = "startSwwwDaemon.service";
-      };
-      Install.WantedBy = ["default.target"];
-      Service = {
+      enable = true;
+      description = "starts swww daemon";
+      after = ["startSwwwDaemon.service"];
+      wantedBy = ["default.target"];
+      serviceConfig = {
         ExecStart = lib.getExe createMatugen;
         Type = "simple";
         Restart = "on-failure";
@@ -57,6 +55,10 @@ in {
         gtk4 = {
           input_path = ./templates/gtk-colors.css;
           output_path = "~/.config/gtk-4.0/colors.css";
+        };
+        fuzzel = {
+          input_path = ./templates/fuzzel.ini;
+          output_path = "~/.config/fuzzel/fuzzel.ini";
         };
         midnight-discord = {
           input_path = ./templates/midnight-discord.css;
