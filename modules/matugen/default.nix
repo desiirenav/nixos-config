@@ -1,5 +1,45 @@
-{pkgs, ...}: 
-{
+{pkgs, ...}:let
+  wallpaper = "/etc/nixos/pics/cave.png";
+  createMatugen = pkgs.writeShellScriptBin "createMatugen" ''
+    echo "creating matugen theme..."
+    matugen image ${wallpaper}
+  '';
+in {
+
+  environment.systemPackages = with pkgs; [
+    createMatugen
+  ];
+
+  systemd.user.services = {
+    startSwwwDaemon = {
+      Unit = {
+        Description = "starts swww daemon";
+        After = "niri.service";
+      };
+      Install.WantedBy = ["default.target"];
+      Service = {
+        ExecStart = lib.getExe' pkgs.swww "swww-daemon";
+        Type = "simple";
+        Restart = "on-failure";
+        RestartSec = 3;
+      };
+    };
+    createMatugen = {
+      Unit = {
+        Description = "starts swww daemon";
+        After = "startSwwwDaemon.service";
+      };
+      Install.WantedBy = ["default.target"];
+      Service = {
+        ExecStart = lib.getExe createMatugen;
+        Type = "simple";
+        Restart = "on-failure";
+        RestartSec = 3;
+      };
+    };
+  };
+
+
   hjem.users.narayan.files = {
     ".config/matugen/config.toml".source = pkgs.writers.writeTOML "config.toml" {
       config = {

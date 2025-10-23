@@ -61,8 +61,6 @@ cursor {
 prefer-no-csd
 
 spawn-at-startup "xwayland-satellite"
-spawn-at-startup "swww-daemon"
-spawn-sh-at-startup "matugen image /etc/nixos/pics/cave.png"
 
 environment {
     DISPLAY ":0"
