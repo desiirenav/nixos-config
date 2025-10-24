@@ -1,32 +1,41 @@
 {
-  description = "A very basic flake";
+  description = "Quarto + Typst + R dev shell";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self, nixpkgs }: 
+  outputs = { self, nixpkgs }:
   let
-    pkgs = nixpkgs.legacyPackages."x86_64-linux";
-  in
-  {
-    devShells."x86_64-linux".default = pkgs.mkShell {
-      packages = with pkgs;[
-        quarto
-        R
-        texliveFull
-        typst
-        rPackages.rmarkdown
-        rPackages.languageserver
-        rPackages.knitr
-        rPackages.rmarkdown
-        rPackages.readxl
-        rPackages.car
+    system = "x86_64-linux";
+    pkgs = import nixpkgs { inherit system; };
+    rEnv = pkgs.rWrapper.override {
+      packages = with pkgs.rPackages; [
+        languageserver
+        knitr
+        rmarkdown
+        readxl
+        car
       ];
-      shellHook = ''
-        echo Welcome to the quarto-typst developpment shell
-      '';    
     };
-  };
+  in {
+    # example package (optional)
+    packages.${system}.hello = pkgs.hello;
+    packages.${system}.default = self.packages.${system}.hello;
+
+    devShells.${system}.default = pkgs.mkShell {
+      packages = with pkgs; [
+        quarto
+        typst
+        pandoc
+        git
+        curl
+        rEnv
+      ];
+
+      shellHook = ''
+        echo "Welcome to the Quarto + Typst development shell"
+      '';
+    };
+  }
 }
-`
