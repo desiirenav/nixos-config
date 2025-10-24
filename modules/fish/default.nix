@@ -10,4 +10,11 @@
     fish_config theme choose "Matugen"
     '';
   };
+  environment.persistence."/persist/system" = {
+    users.narayan = {
+      directories = [
+        ".config/fish"
+      ];
+    };
+  };
 }

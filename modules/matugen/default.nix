@@ -23,14 +23,6 @@ in {
           input_path = ./templates/fuzzel.ini;
           output_path = "~/.config/fuzzel/fuzzel.ini";
         };
-        midnight-discord = {
-          input_path = ./templates/midnight-discord.css;
-          output_path = "~/.config/vesktop/themes/midnight-discord.css";
-        };
-        starship = {
-          input_path = ./templates/starship.toml;
-          output_path = "~/.config/starship.toml";
-        };
         kitty = {
           input_path = ./templates/kitty-colors.conf;
           output_path = "~/.config/kitty/kitty.conf";
@@ -43,15 +35,12 @@ in {
           input_path = ./templates/theme.toml;
           output_path = "~/.config/yazi/theme.toml";
         };
-        walker = {
-          input_path = ./templates/walker.css;
-          output_path = "~/.config/walker/themes/matugen.css";
-        };
         zathura = {
           input_path = ./templates/zathura;
           output_path = "~/.config/zathura/zathurarc";
         };
       };
     };
+
   };
 }

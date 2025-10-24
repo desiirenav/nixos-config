@@ -10,11 +10,9 @@
     yazi
     nautilus
     swww
-    swaybg
     gtk3
     gtk4
     kitty
-    vesktop
     fuzzel
     bibata-cursors
     adwaita-icon-theme
