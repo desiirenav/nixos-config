@@ -1,41 +1,6 @@
 {pkgs, lib, config, ...}:let
-  wallpaper = "/etc/nixos/pics/cave.png";
-  createMatugen = pkgs.writeShellScriptBin "createMatugen" ''
-    ${pkgs.matugen}/bin/matugen image ${wallpaper}
-  '';
+
 in {
-
-  environment.systemPackages = with pkgs; [ createMatugen ];
-  systemd.user.services = {
-    "swwwDaemon" = {
-      description = "A Solution to your Wayland Wallpaper Woes";
-      partOf = ["graphical-session.target"];
-      after = ["graphical-session.target"];
-      wantedBy = ["graphical-session.target"];
-      serviceConfig = {
-        Type = "simple";
-        ExecStart = "${pkgs.swww}/bin/swww-daemon";
-        Restart = "on-failure";
-        RestartSec = 3;
-      };
-    };
-    "matugenDaemon" = {
-      description = "Applying themes with matugen";
-      partOf = [ "graphical-session.target" "swwwDaemon.service" ];
-      wants  = [ "swwwDaemon.service" ];
-      after  = [ "graphical-session.target" "swwwDaemon.service" ];
-      wantedBy = [ "graphical-session.target" ];
-      path = [ pkgs.swww pkgs.matugen pkgs.coreutils ];
-      serviceConfig = {
-        Type = "oneshot";
-        ExecStart = lib.getExe createMatugen;
-        Restart = "on-failure";
-        RestartSec = 3;
-      };
-    };
-  };
-
-
   hjem.users.narayan.files = {
     ".config/matugen/config.toml".source = pkgs.writers.writeTOML "config.toml" {
       config = {
