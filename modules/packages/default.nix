@@ -4,6 +4,7 @@
   imports = [
     ./browser
     ./gaming
+    ./niri
     ./nvim
   ];
   environment.systemPackages = with pkgs; [
@@ -13,7 +14,6 @@
     gtk3
     gtk4
     kitty
-    pywalfox-native
     fuzzel
     (discord.override {
       withVencord = true;

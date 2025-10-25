@@ -32,7 +32,8 @@ layout {
         off
     }
      border {
-        off
+        active-color "{{colors.primary.default.hex}}"
+        inactive-color "{{colors.surface.default.hex}}"
     }
     preset-column-widths {
         proportion 0.25
@@ -63,6 +64,7 @@ prefer-no-csd
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "swww-daemon"
 spawn-sh-at-startup "matugen image /etc/nixos/assets/cave.png"
+spawn-sh-at-startup "pywalfox update"
 
 environment {
     DISPLAY ":0"
