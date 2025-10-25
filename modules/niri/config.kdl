@@ -41,7 +41,7 @@ layout {
         proportion 1.0
     }
     default-column-width { proportion 0.5; }
-    gaps 16
+    gaps 9
     struts {
     }
     background-color "transparent"
@@ -55,14 +55,14 @@ layout {
 
 cursor {
     xcursor-theme "capitaine-cursors"
-    xcursor-size 22
+    xcursor-size 24
 }
 
 prefer-no-csd
 
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "swww-daemon"
-spawn-sh-at-startup "matugen image /etc/nixos/assets/cave.png"
+spawn-sh-at-startup "matugen image /etc/nixos/assets/boat.png"
 
 environment {
     DISPLAY ":0"
@@ -85,7 +85,7 @@ layer-rule {
 
 
 window-rule {
-    geometry-corner-radius 12
+    geometry-corner-radius 6
     clip-to-geometry true
 }
 
@@ -116,8 +116,6 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+Return { spawn "kitty"; }
     Mod+X { spawn "fuzzel"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
-    Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }

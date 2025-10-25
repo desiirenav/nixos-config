@@ -116,6 +116,27 @@
         "type": "github"
       }
     },
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": [
+          "zen-browser",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1752603129,
+        "narHash": "sha256-S+wmHhwNQ5Ru689L2Gu8n1OD6s9eU9n9mD827JNR+kw=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "e8c19a3cec2814c754f031ab3ae7316b64da085b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
     "impermanence": {
       "locked": {
         "lastModified": 1737831083,
@@ -264,6 +285,22 @@
         "type": "github"
       }
     },
+    "nixpkgs_7": {
+      "locked": {
+        "lastModified": 1755615617,
+        "narHash": "sha256-HMwfAJBdrr8wXAkbGhtcby1zGFvs+StOp19xNsbqdOg=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "20075955deac2583bb12f07151c2df830ef346b4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "ny": {
       "flake": false,
       "locked": {
@@ -285,7 +322,7 @@
         "impermanence": "impermanence",
         "mnw": "mnw",
         "nixpkgs": "nixpkgs_6",
-        "sf-mono-liga-src": "sf-mono-liga-src"
+        "zen-browser": "zen-browser"
       }
     },
     "rust-overlay": {
@@ -400,22 +437,6 @@
         "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Mono.dmg"
       }
     },
-    "sf-mono-liga-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1688258025,
-        "narHash": "sha256-AYjKrVLISsJWXN6Cj74wXmbJtREkFDYOCRw1t2nVH2w=",
-        "owner": "shaunsingh",
-        "repo": "SFMono-Nerd-Font-Ligaturized",
-        "rev": "dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea",
-        "type": "github"
-      },
-      "original": {
-        "owner": "shaunsingh",
-        "repo": "SFMono-Nerd-Font-Ligaturized",
-        "type": "github"
-      }
-    },
     "sf-pro": {
       "flake": false,
       "locked": {
@@ -463,6 +484,25 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "zen-browser": {
+      "inputs": {
+        "home-manager": "home-manager",
+        "nixpkgs": "nixpkgs_7"
+      },
+      "locked": {
+        "lastModified": 1761366157,
+        "narHash": "sha256-aqZ8hrOgs6cPKQ7efc1sGYPa7iGVsmCbcGXktRJz2Qs=",
+        "owner": "0xc000022070",
+        "repo": "zen-browser-flake",
+        "rev": "f338def1f2ea5f6c214004b5d2ed796b9783581a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "0xc000022070",
+        "repo": "zen-browser-flake",
         "type": "github"
       }
     }

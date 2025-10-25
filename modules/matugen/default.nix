@@ -35,10 +35,6 @@ in {
           input_path = ./templates/colors.json;
           output_path = "~/.cache/wal/colors.json";
         };
-        niri = {
-          input_path = ./templates/niri.kdl;
-          output_path = "~/.config/niri/config.kdl";
-        };
         vencord = {
           input_path = ./templates/midnight-discord.css;
           output_path = "~/.config/Vencord/themes/midnight-discord.css";

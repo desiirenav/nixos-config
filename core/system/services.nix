@@ -3,6 +3,7 @@
 {
   services = {
     gvfs.enable = true;
+    upower.enable = true;
     openssh.enable = true;
     pipewire = {
       enable = true;

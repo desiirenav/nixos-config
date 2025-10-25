@@ -4,7 +4,6 @@
   imports = [
     ./browser
     ./gaming
-    ./niri
     ./nvim
   ];
   environment.systemPackages = with pkgs; [
@@ -15,6 +14,7 @@
     gtk4
     kitty
     fuzzel
+    inputs.zen-browser.packages."${system}".default
     (discord.override {
       withVencord = true;
     })

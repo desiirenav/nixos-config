@@ -5,6 +5,7 @@
     users.narayan = {
       directories = [
         ".mozilla"
+        ".zen"
       ];
     };
   };
