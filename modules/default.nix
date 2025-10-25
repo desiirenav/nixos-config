@@ -12,6 +12,7 @@
     ./gtk
     ./hjem
     ./matugen
+    ./niri
     ./packages
     ./persist
   ];
