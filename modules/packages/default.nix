@@ -14,7 +14,7 @@
     gtk4
     kitty
     fuzzel
-    bibata-cursors
+    capitaine-cursors
     adwaita-icon-theme
     matugen
     xwayland-satellite
