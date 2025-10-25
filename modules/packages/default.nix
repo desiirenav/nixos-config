@@ -14,6 +14,7 @@
     gtk4
     kitty
     fuzzel
+    walker
     (discord.override {
       withVencord = true;
     })

@@ -35,6 +35,10 @@ in {
           input_path = ./templates/midnight-discord.css;
           output_path = "~/.config/Vencord/themes/midnight-discord.css";
         };
+        walker = {
+          input_path = ./templates/walker.css;
+          output_path = "~/.config/walker/themes/matugen.css";
+        };
         zathura = {
           input_path = ./templates/zathura;
           output_path = "~/.config/zathura/zathurarc";
