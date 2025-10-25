@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, config, ... }:
 
 {  
   imports = [
@@ -13,8 +13,8 @@
     gtk3
     gtk4
     kitty
+    pywalfox-native
     fuzzel
-    walker
     (discord.override {
       withVencord = true;
     })

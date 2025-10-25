@@ -31,13 +31,14 @@ in {
           input_path = ./templates/colors-fish.theme;
           output_path = "~/.config/fish/themes/Matugen.theme";
         };
+        pywalfox = {
+          input_path = ./templates/colors.json;
+          output_path = "~/.cache/wal/colors.json";
+          post_hook = "pywalfox update";
+        }; 
         vencord = {
           input_path = ./templates/midnight-discord.css;
           output_path = "~/.config/Vencord/themes/midnight-discord.css";
-        };
-        walker = {
-          input_path = ./templates/walker.css;
-          output_path = "~/.config/walker/themes/matugen.css";
         };
         zathura = {
           input_path = ./templates/zathura;
