@@ -14,6 +14,9 @@
     gtk4
     kitty
     fuzzel
+    (discord.override {
+      withVencord = true;
+    })
     capitaine-cursors
     adwaita-icon-theme
     matugen

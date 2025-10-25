@@ -31,9 +31,9 @@ in {
           input_path = ./templates/colors-fish.theme;
           output_path = "~/.config/fish/themes/Matugen.theme";
         };
-        yazi = {
-          input_path = ./templates/theme.toml;
-          output_path = "~/.config/yazi/theme.toml";
+        vencord = {
+          input_path = ./templates/midnight-discord.css;
+          output_path = "~/.config/Vencord/themes/midnight-discord.css";
         };
         zathura = {
           input_path = ./templates/zathura;

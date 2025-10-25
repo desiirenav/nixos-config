@@ -40,8 +40,8 @@
         "Videos"
         "Projects"
         ".ssh"
-        #".config/discord"
-        ".config/vesktop"
+        ".config/discord"
+        ".config/Vencord"
       ];
       files = [
         ".bash_history"
